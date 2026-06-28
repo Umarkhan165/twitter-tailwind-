@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body class="bg-black text-white">
+    <div class="flex md:container mx-auto my-4">
+        <div class="first w-16 md:w-[70%] bg-black text-white">
+            <div class="sidebar flex md:items-end  flex-col sticky top-0">
+                <div class="logo invert my-4 self-start mx-2 md:mx-16 text-white">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <ul class="flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full  ">
+                    <li class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="material-symbols-outlined">home</span> <span class="hidden md:block">Home</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined">
+                            add
+                            </span>ADD
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> notifications </span><span
+                            class="hidden md:block">Notifications</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> message </span><span
+                            class="hidden md:block">Grok</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> lists </span><span
+                            class="hidden md:block">Lists</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> bookmarks </span><span
+                            class="hidden md:block">Bookmarks</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> Group </span><span
+                            class="hidden md:block">Communities</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> box </span><span
+                            class="hidden md:block">Premium</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> person </span><span
+                            class="hidden md:block">Profile</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> pending </span><span
+                            class="hidden md:block">More</span>
+                    </li>
+                    <li>
+                        <div class="button w-full text-center my-4">
+                            <button
+                                class="hidden md:block bg-[#1d9bf0] px-20 text-xl rounded-full py-3 text-white">Post</button>
+                            <button class="md:hidden bg-[#1d9bf0]  px-2 md:px-4 text-xl rounded-full py-1 md:py-3 text-white">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="userprofile w-full mt-10  justify-end mx-10 hidden md:flex">
+                    <div
+                        class="item p-3 items-center gap-5 justify-end mx-5 flex   hover:bg-gray-800 cursor-pointer rounded-full w-fit">
+                        <div class="p1"><img class="w-12 h-12"
+                                src="data:image/jpeg;base64,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"
+                                alt="vercel"></div>
+                        <div class="p2 ">
+                            <div>Muhamad Umar Khan</div>
+                            <div class="text-gray-500">@CodewithUmar</div>
+                        </div>
+                        <div class="p3 text-2xl">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="second w-full border-[1px] border-x-gray-600 border-y-black  ">
+            <div class="top flex p-3 sticky top-0 bg-black backdrop-blur-3xl opacity-80">
+                <div class="absolute w-16 h-1 rounded-full bg-blue-500 bottom-0 left-[19%] z-10"></div>
+                <div class="left bg-red-3001 w-1/2 flex justify-center font-bold text-lg">For You</div>
+                <div class="right bg-green-3001 w-1/2 flex justify-center font-bold text-lg">Following</div>
+                <div class="settings mx-2"><span class="material-symbols-outlined">
+                        settings
+                    </span></div>
+            </div>
+            <div class="h-[1px] w-full bg-gray-700"></div>
+            <div class="whatishapp flex gap-4 my-3">
+                <div class="img m-2 w-16">
+
+                    <img class="rounded-4xl" src="data:image/jpeg;base64,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" alt="">
+                </div>
+                <div class="w-full">
+                    <input class="w-full h-7 my-2 text-xl bg-black outline-none text-white" type="text"
+                        placeholder="What is happening?!">
+                    <div class="text-blue-400 flex items-center gap-1 w-full my-4">
+                        <span class="material-symbols-outlined ">
+                            globe_asia
+                        </span>
+                        <span class="font-bold">Everyone can reply</span>
+                    </div>
+                    <div class="w-[90%] h-[0.2px] bg-gray-700 my-3"></div>
+                    <div class="flex justify-between">
+
+                        <div class="blueicons flex gap-2 text-blue-400 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                image
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                gif
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                ballot
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                calendar_month
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                pin_drop
+                            </span>
+                        </div>
+                        <div class="postbtn">
+                            <button
+                                class="bg-[#1d9bf0] px-6 mx-5 text-sm rounded-full py-2 text-white font-bold">Post</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="posts">
+                <div class="post border-[1px] border-y-gray-600 border-x-0  ">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-16 rounded-4xl"
+                                src="data:image/jpeg;base64,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" alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer text-white">Elon Musk</span> <span
+                                class="text-gray-500">@ElonMusk · 6h </span>
+                            <div class="postimg m-2 ml-0"> I spent $44 billion for this app and now Lizard boy just
+                                decided to hit copy and paste.
+
+                                It’s personal now.
+
+                                See you in the cage, Zuck.
+                            </div>
+                            <div class="icons flex justify-between mx-4 my-4 text-sm text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        Favorite
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span> 1k
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-16 rounded-4xl"
+                                src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer text-white">Umar Khan</span> <span
+                                class="text-gray-500">@Umar · 6h </span>
+                            <div>legend</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://pbs.twimg.com/media/GEGqnodacAAoyCO?format=jpg&name=900x900" alt="">
+                            </div>
+                            <div class="icons flex justify-between mx-4 my-4 text-sm text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        Favorite
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span> 1k
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-8 rounded-4xl"
+                                src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer text-white"> non aesthetic
+                                things</span> <span class="text-gray-500">@CodeMeme · 6h </span>
+                            <div>This is amazing coding meme</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl w-full"
+                                    src="https://s3.amazonaws.com/rails-camp-tutorials/blog/programming+memes/works-doesnt-work.jpg"
+                                    alt="">
+                            </div>
+                            <div class="icons flex justify-between mx-4 my-4 text-sm text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        Favorite
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span> 1k
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-16"
+                                src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer text-white"> non aesthetic
+                                things</span> <span class="text-gray-500">@PicturesFoIder · 6h </span>
+                            <div>legend</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://pbs.twimg.com/media/GEGqnodacAAoyCO?format=jpg&name=900x900" alt="">
+                            </div>
+                            <div class="icons flex justify-between mx-4 my-4 text-sm text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        Favorite
+                                    </span> 1k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span> 1k
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="third w-full bg-red-5044 hidden md:block">
+
+            <div class="search m-3">
+                <input type="text" class="w-1/2 rounded-full bg-[#16181c] text-white px-4 py-2" placeholder="Search">
+            </div>
+
+            <div class="whats sticky top-0 m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
+                <h1 class="text-xl font-bold px-3">Whats Happening</h1>
+                <div class="item p-3 hover:bg-gray-800 cursor-pointer px-3">
+                    <div class="text-sm text-gray-200">Trending in </div>
+                    <div class="font-bold">#pak</div>
+                    <div class="text-sm text-gray-200">40.2k Posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-gray-800 cursor-pointer px-3">
+                    <div class="text-sm text-gray-200">Trending in Multan</div>
+                    <div class="font-bold">#pakistan</div>
+                    <div class="text-sm text-gray-200">40.2k Posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-gray-800 cursor-pointer px-3">
+                    <div class="text-sm text-gray-200">Trending in Lahore</div>
+                    <div class="font-bold">#Course</div>
+                    <div class="text-sm text-gray-200">40.2k Posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-gray-800 cursor-pointer px-3">
+                    <div class="text-sm text-gray-200">Trending in Pakistan</div>
+                    <div class="font-bold">#islamabad</div>
+                    <div class="text-sm text-gray-200">40.2k Posts</div>
+                </div>
+            </div>
+
+
+            <div class="who sticky top-[50vh] m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-1">
+                <h1 class="text-xl font-bold px-3">Who To Follow</h1>
+
+
+                <div class="item p-3 items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer">
+                    <div class="flex gap-3">
+
+                        <div class="p1"><img class="w-12 h-12 rounded-4xl"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEUAAAD///+Tk5P8/Pxubm719fXNzc3s7Ozc3Nybm5uIiIji4uKwsLAuLi75+fnU1NSjo6NjY2NRUVGCgoKqqqpaWlq/v7/g4OB2dnbGxsa5ubkjIyM7OzsJCQlGRkYbGxtR4SmvAAACcElEQVR4nO3ZaVYbQQxFYWRssDHz4IAxZv+7DDlJA+6hSk1XRZLP/Vag96v69D05AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwGSX1gfUNpN76xMqE1lbn1DXVkQerI+oafcxUE6tr6hp+WehPFqfUc9c/nq1PqSaxb+FZ9aH1LKSxpP1KXW8fQ6Uc+tb6th8LZQL62Nq2Mt31tfUsD5YeISfp89y6Mr6oOKuWwtvrA8q7Vba7qxPKuu9M/DYXoyX7kKZWR9V0n3PwON6Mc57F26tzyrnoXegyM76sGJOBxYurQ8r5XFgoMjc+rQyXgcHysL6tjLOhhfKyvq4Ep4SA4/jxeh/KRob6/Omu0gOFNlbHzhZZqD8sj5wqsvcQnm2PnGaq+xAuba+cZqb/EK5tT5yijvFQJF36zMnWOTnfXixPvPnZqqBEjiaKgfGjaZb7cKo0XSnHhg1mi71C2NG03l+1zcRo6nupWgEjKar/KoD4aLpW37ToXC/wDf5TS3Bouk+v6jD+uZx1vlBHaGiaTuH6kSKpu0cqhMomnZzqE6YaNqTQ3XCvBh9OVQnSDTtz6E61rfrpH9yp4WIpkM5VCdCNB3KoToBoulwDtVxH00TOVTHfTRN5VAd59E0nUN1rDekTXkpGq6jaS6H6niOpkUGeo6m+Ryq4zaaKnKojttoqsmhOk6jqS6H6viMpiVeiobLaKrNoToeo2nRgR6jqT6H6riLpiNyqI67aDomh+o4i6bjcqiOr2g6LofquIqmY3OojqNoOjqH6jj6Bf7zn9xpQX6BAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/H+/ASNrFaCFQOJnAAAAAElFTkSuQmCC"
+                                alt="vercel"></div>
+                        <div class="p2 ">
+                            <div>Vercel</div>
+                            <div class="text-gray-500">@vercel</div>
+                        </div>
+                    </div>
+
+                    <div class="p3">
+                        <button class="bg-white text-black px-5 py-2 rounded-full font-bold">Follow</button>
+                    </div>
+
+                </div>
+                <div class="item p-3 items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer">
+                    <div class="flex gap-3">
+
+                        <div class="p1"><img class="w-12 h-12 rounded-4xl"
+                                src="data:image/png;base64,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"
+                                alt="vercel"></div>
+                        <div class="p2 ">
+                            <div>React</div>
+                            <div class="text-gray-500">@react</div>
+                        </div>
+                    </div>
+
+                    <div class="p3">
+                        <button class="bg-white text-black px-5 py-2 rounded-full font-bold">Follow</button>
+                    </div>
+
+                </div>
+                <div class="item p-3 items-center gap-2 flex justify-between hover:bg-gray-800 cursor-pointer">
+                    <div class="flex gap-3">
+                        <div class="p1"><img class="w-12 h-12 rounded-4xl"
+                                src="https://pbs.twimg.com/profile_images/989513875124117504/UNMIb20k_bigger.jpg"
+                                alt="vercel"></div>
+                        <div class="p2 ">
+                            <div>Shad.js</div>
+                            <div class="text-gray-500">@shad</div>
+                        </div>
+                    </div>
+
+                    <div class="p3">
+                        <button class="bg-white text-black px-5 py-2 rounded-full font-bold">Follow</button>
+                    </div>
+                </div>
+                    <div class="text-blue-600 px-3 cursor-pointer hover:underline my-5">Show More</div>
+                    <div class="terms sticky top-[84vh] m-3 text-xs text-gray-500 px-3  w-1/2 py-5 space-y-2">
+                        <span class="hover:underline cursor-pointer mr-2">Terms of Service</span>
+                        <span class="hover:underline cursor-pointer mr-2">Privacy Policy</span>
+                        <span class="hover:underline cursor-pointer mr-2">Cookie Policy</span>
+                        <span class="hover:underline cursor-pointer mr-2">Accessibility</span>
+                        <span class="hover:underline cursor-pointer mr-2">Ads info</span>
+                        <span class="hover:underline cursor-pointer mr-2">More</span>
+                        <span class="hover:underline cursor-pointer mr-2">© 2024 X Corp.</span>
+                    </div>
+                </div>  
+        </div>
+    </div>
+</body>
+</html>
